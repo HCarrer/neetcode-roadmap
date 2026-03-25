@@ -31,8 +31,6 @@ class Solution:
 		for index, c in count.items():
 			freq[c].append(index)
    
-		print(freq)
-   
 		res = []
 		for i in range(len(freq) - 1, 0, -1):
 			for n in freq[i]:
@@ -42,5 +40,5 @@ class Solution:
 	
 	
 sol = Solution()
-# print(sol.topKFrequent([1,2,2,3,3,3], 2))
+print(sol.topKFrequent([1,2,2,3,3,3], 2))
 print(sol.topKFrequent([1,1,1,2,2,100, 100], 2))
